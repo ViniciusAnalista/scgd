@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class Contato {
 
 	@Id
-	@GeneratedValue(strategy= GenerationType.AUTO)
+	@GeneratedValue(strategy= GenerationType.SEQUENCE)
 	private long id;
 	
 	@Column(name = "TELEFONE_FIXO", precision = 20)

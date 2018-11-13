@@ -19,7 +19,6 @@ public class PrestacaoServico {
 	@GeneratedValue(strategy= GenerationType.AUTO)
 	private long id;
 	
-	@OneToMany
 	private Cliente cliente;
 	
 	@Column(name = "DATA_EFETIVACAO")

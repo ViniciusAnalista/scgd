@@ -1,20 +1,20 @@
 package br.com.scgd.persistence.entity;
 
-import java.util.List;
+import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "SCGD001_CLIENTE")
-public class Cliente {
+public class Cliente implements Serializable {
 	
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
 	private long idCliente;
@@ -25,12 +25,6 @@ public class Cliente {
 	@Column(name = "NOME_EMPRESA", precision = 40)
 	private String nomeEmpresa;
 	
-	@OneToMany
-	private List<Endereco> endereco;
-	
-	@ManyToOne
-	private Contato contato;
-	
 	@Column(name = "TIPO_CLIENTE", precision = 1)
 	private int tipoCliente;
 	
@@ -39,19 +33,6 @@ public class Cliente {
 	
 	@Column(name = "DESCRICAO")
 	private String descricao;
-
-	public Cliente(long idCliente, String nomeCompleto, String nomeEmpresa, List<Endereco> endereco, Contato contato,
-			int tipoCliente, long cpfCnpj, String descricao) {
-		super();
-		this.idCliente = idCliente;
-		this.nomeCompleto = nomeCompleto;
-		this.nomeEmpresa = nomeEmpresa;
-		this.endereco = endereco;
-		this.contato = contato;
-		this.tipoCliente = tipoCliente;
-		this.cpfCnpj = cpfCnpj;
-		this.descricao = descricao;
-	}
 
 	public long getIdCliente() {
 		return idCliente;
@@ -77,22 +58,6 @@ public class Cliente {
 		this.nomeEmpresa = nomeEmpresa;
 	}
 
-	public List<Endereco> getEndereco() {
-		return endereco;
-	}
-
-	public void setEndereco(List<Endereco> endereco) {
-		this.endereco = endereco;
-	}
-
-	public Contato getContato() {
-		return contato;
-	}
-
-	public void setContato(Contato contato) {
-		this.contato = contato;
-	}
-
 	public int getTipoCliente() {
 		return tipoCliente;
 	}
@@ -116,5 +81,4 @@ public class Cliente {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	
 }
