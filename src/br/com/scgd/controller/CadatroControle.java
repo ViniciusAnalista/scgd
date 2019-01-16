@@ -4,12 +4,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class HomeController {
+public class CadatroControle {
 
-	@RequestMapping("/home")
-	public String index() {
-		System.out.println("Teste-Home");
-		return "home";
+	@RequestMapping("/cadastro")
+	public void cadastro( ) {
+		System.out.println("Cliente Salvo");
 	}
-	
 }
