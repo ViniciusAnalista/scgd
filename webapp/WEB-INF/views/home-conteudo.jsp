@@ -19,8 +19,7 @@
 									<i class="fa fa-fw fa-calendar"></i> Calendário de agendamentos
 								</a>
 								 <a href="#" class="list-group-item"> <span class="badge">4
-										minutes ago</span> <i class="fa fa-fw fa-comment"></i> Commented on a
-									post
+										minutes ago</span> <i class="fa fa-fw fa-comment"></i> Comentários
 								</a> <a href="#" class="list-group-item"> <span class="badge">23
 										minutes ago</span> <i class="fa fa-fw fa-truck"></i> Order 392
 									shipped
@@ -31,7 +30,7 @@
 										hour ago</span> <i class="fa fa-fw fa-user"></i> A new user has been
 									added
 								</a> <a href="#" class="list-group-item"> <span class="badge">2
-										hours ago</span> <i class="fa fa-fw fa-check"></i> Completed task:
+										hours ago</span> <i class="fa fa-fw fa-check"></i> Tarefas:
 									"pick up dry cleaning"
 								</a> <a href="#" class="list-group-item"> <span class="badge">yesterday</span>
 									<i class="fa fa-fw fa-globe"></i> Saved the world

@@ -56,7 +56,7 @@
                         <a onclick='exibiConteudo("home-conteudo")'><i class="fa fa-fw fa-desktop"></i> Home</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-fw fa-edit"></i> Adicionar serviço</a>
+                        <a onclick='exibiConteudo("adicionarServico")'><i class="fa fa-fw fa-edit"></i> Adicionar serviço</a>
                     </li>     
                     <li>
                         <a href="#"><i class="fa fa-fw fa-table"></i> Histórico</a>
@@ -93,6 +93,7 @@
 			<%@ include file="../views/home-conteudo.jsp"%>
 			<%@ include file="../views/lista-clientes.jsp" %>
 			<%@ include file="../views/cadastro-cliente.jsp"%>
+			<%@ include file="../views/adicionar-servico.jsp"%>
         </div>
     </div>
 
